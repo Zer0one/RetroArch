@@ -47,7 +47,7 @@
 		83D632DB19ECFCC4009E3161 /* iOS/Resources/ic_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS/Resources/ic_pause.png; sourceTree = SOURCE_ROOT; };
 		83D632DE19ECFCC4009E3161 /* iOS/Resources/PauseIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOS/Resources/PauseIndicatorView.xib; sourceTree = SOURCE_ROOT; };
 		83EB675F19EEAF050096F441 /* iOS/modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iOS/modules; sourceTree = SOURCE_ROOT; };
-		9204BE2B1D319EF300BD49DB /* RetroArchiOS11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroArchiOS11.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9204BE2B1D319EF300BD49DB /* RetroArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96366C5416C9AC3300D64A22 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		96366C5816C9ACF500D64A22 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		963C3C33186E3DED00A6EB1E /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
@@ -118,7 +118,7 @@
 		96AFAE2616C1D4EA009DE44C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9204BE2B1D319EF300BD49DB /* RetroArchiOS11.app */,
+				9204BE2B1D319EF300BD49DB /* RetroArch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 			);
 			name = RetroArchiOS11;
 			productName = RetroArch;
-			productReference = 9204BE2B1D319EF300BD49DB /* RetroArchiOS11.app */;
+			productReference = 9204BE2B1D319EF300BD49DB /* RetroArch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -222,8 +222,8 @@
 				ORGANIZATIONNAME = RetroArch;
 				TargetAttributes = {
 					9204BE091D319EF300BD49DB = {
-						DevelopmentTeam = UK699V5ZS8;
-						DevelopmentTeamName = "RetroArch";
+						DevelopmentTeam = LGUFRQ5857;
+						DevelopmentTeamName = RetroArch;
 					};
 				};
 			};
@@ -309,7 +309,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
-				DEVELOPMENT_TEAM = UK699V5ZS8;
+				DEVELOPMENT_TEAM = LGUFRQ5857;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
@@ -332,7 +332,7 @@
 					"-DHAVE_HID",
 					"-DHAVE_NETWORKING",
 					"-DHAVE_AVFOUNDATION",
-               "-DHAVE_RUNAHEAD",
+					"-DHAVE_RUNAHEAD",
 					"-DHAVE_GRIFFIN",
 					"-DHAVE_STB_VORBIS",
 					"-DHAVE_MINIUPNPC",
@@ -376,8 +376,8 @@
 					"-DHAVE_AVFOUNDATION",
 					"-DHAVE_KEYMAPPER",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.RetroArchiOS11;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zer0Team.RetroArchiOS11;
+				PRODUCT_NAME = RetroArch;
 				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 arm64";
 				WARNING_CFLAGS = "-Wno-invalid-source-encoding";
@@ -395,7 +395,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
-				DEVELOPMENT_TEAM = UK699V5ZS8;
+				DEVELOPMENT_TEAM = LGUFRQ5857;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
@@ -419,7 +419,7 @@
 					"-DHAVE_HID",
 					"-DHAVE_NETWORKING",
 					"-DHAVE_AVFOUNDATION",
-               "-DHAVE_RUNAHEAD",
+					"-DHAVE_RUNAHEAD",
 					"-DHAVE_GRIFFIN",
 					"-DHAVE_STB_VORBIS",
 					"-DHAVE_MINIUPNPC",
@@ -473,7 +473,7 @@
 					"-DHAVE_HID",
 					"-DHAVE_NETWORKING",
 					"-DHAVE_AVFOUNDATION",
-               "-DHAVE_RUNAHEAD",
+					"-DHAVE_RUNAHEAD",
 					"-DHAVE_GRIFFIN",
 					"-DHAVE_STB_VORBIS",
 					"-DHAVE_MINIUPNPC",
@@ -518,8 +518,8 @@
 					"-DHAVE_AVFOUNDATION",
 					"-DHAVE_KEYMAPPER",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.RetroArchiOS11;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zer0Team.RetroArchiOS11;
+				PRODUCT_NAME = RetroArch;
 				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 arm64";
 				WARNING_CFLAGS = "-Wno-invalid-source-encoding";
@@ -561,7 +561,7 @@
 					"-DHAVE_HID",
 					"-DHAVE_NETWORKING",
 					"-DHAVE_AVFOUNDATION",
-               "-DHAVE_RUNAHEAD",
+					"-DHAVE_RUNAHEAD",
 					"-DHAVE_GRIFFIN",
 					"-DHAVE_STB_VORBIS",
 					"-DHAVE_MINIUPNPC",
@@ -632,7 +632,7 @@
 					"-DHAVE_HID",
 					"-DHAVE_NETWORKING",
 					"-DHAVE_AVFOUNDATION",
-               "-DHAVE_RUNAHEAD",
+					"-DHAVE_RUNAHEAD",
 					"-DHAVE_GRIFFIN",
 					"-DHAVE_STB_VORBIS",
 					"-DHAVE_MINIUPNPC",
